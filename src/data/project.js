@@ -14,7 +14,7 @@ const projects = [
     {
       id: 2,
       name: 'Proyecto App movil',
-      description: 'Proyecto desarrollado con AndroidStudio y Kotlin',
+      description: 'Proyecto desarrollado con AndroidStudio, Kotlin y firebase',
       tecnologies: ['Kotlin', 'AndroidStudio'],
       image:  appMovilImg,
       url: 'https://github.com/Dani-txt/TuAuto'

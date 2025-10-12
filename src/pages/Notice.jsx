@@ -9,9 +9,9 @@ function Noticias() {
     return (
         <div className="background-container">
             <div className="noticias-page">
-                <div className="text-center mb-5 transparent-container" style={{padding: '2rem', margin: '2rem auto', maxWidth: '800px'}}>
+                <div className="text-center mb-5">
                     <Text variant="h1" type="title">Noticias</Text>
-                    <Text variant="p" type="body" className="section-subtitle">
+                    <Text variant="p" type="subtitle" className="section-subtitle">
                         Últimas actualizaciones y logros
                     </Text>
                 </div>

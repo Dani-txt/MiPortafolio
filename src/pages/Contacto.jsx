@@ -59,7 +59,7 @@ function Contact() {
             <div className="contact-page">
                 <div className="text-center mb-5">
                     <Text variant="h1" type="title">Contacto</Text>
-                    <Text variant="p" type="body" className="mt-3">
+                    <Text variant="p" type="subtitle" className="mt-3">
                         ¿Tienes un proyecto en mente? Hablemos y hagámoslo realidad.
                     </Text>
                 </div>

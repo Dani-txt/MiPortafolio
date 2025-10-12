@@ -4,8 +4,8 @@ import Footer from '../components/molecules/Footer';
 import '../styles/pages/NotFound.css';
 
 const image = {
-    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnLMSjfk8BbBLwEAf2T3zSpK8hhg8bMkHPww&s',
-    alt: 'Not Found Image',
+    src: '/img/notFound/error.webp',
+    alt: 'Página no encontrada',
 }
 
 function NotFound() {
@@ -14,12 +14,12 @@ function NotFound() {
             <div className="notfound-page">
                 <div className="not-found-container transparent-container">
                     <h1>Página no encontrada</h1>
-                    <p>¿Estás seguro de que era aquí?</p>
+                    <p>¿Te perdiste mi rey?</p>
                 
                     <Image src={image.src} alt={image.alt} className="not-found-image" />
                 </div>
-                <Footer />
             </div>
+            <Footer />
         </div>
     );
 }

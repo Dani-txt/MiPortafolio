@@ -9,11 +9,11 @@ function Projects() {
   return (
     <div className="background-container">
       <div className="projects-page">
-        <div className="transparent-container" style={{padding: '2rem', margin: '2rem auto', maxWidth: '800px', textAlign: 'center'}}>
+        <div className="text-center mb-5">
           <Text variant="h1" type="title" className="section-title">
             Mis Proyectos
           </Text>
-          <Text variant="p" type="body" className="section-subtitle">
+          <Text variant="p" type="subtitle" className="section-subtitle">
             Algunos de mis trabajos y experimentos
           </Text>
         </div>

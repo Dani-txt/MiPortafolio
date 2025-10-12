@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Navigate } from 'react-router-dom';
 import projects from '../data/project.js';
 import Image from '../components/atoms/Image.jsx';
 import Text from '../components/atoms/Text.jsx';
@@ -10,7 +10,15 @@ import '../styles/pages/ProjectDetail.css';
 function ProjectDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const project = projects.find((p) => p.id === parseInt(id));
+  
+  // Verificar si el ID es válido
+  const projectId = parseInt(id);
+  const project = projects.find((p) => p.id === projectId);
+
+  // Si el proyecto no existe, redirigir a NotFound
+  if (!project) {
+    return <Navigate to="/not-found" replace />;
+  }
 
   const handleRepositorioClick = () => {
     if (project && project.url) {
@@ -18,20 +26,10 @@ function ProjectDetail() {
     }
   };
 
-  if (!project) {
-    return (
-      <div className="background-container">
-        <div className="project-detail-page">
-          <Text variant="h1">Proyecto no encontrado</Text>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="background-container">
       <div className="project-detail-page">
-        <button className="back-button transparent-container" onClick={() => navigate('/projects')}>
+        <button className="btn-custom transparent-container" onClick={() => navigate('/projects')}>
           ← Volver a Proyectos
         </button>
         
@@ -49,8 +47,7 @@ function ProjectDetail() {
                 ))}
               </div>
             </div>
-            
-            <Button variant="primary" onClick={handleRepositorioClick} className="mt-3">
+            <Button variant="primary" onClick={handleRepositorioClick} className="back-button">
               Ver Repositorio
             </Button>
           </div>
