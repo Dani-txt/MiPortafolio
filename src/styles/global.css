@@ -1,0 +1,152 @@
+    :root {
+    --bg-primary: #000000;
+    --bg-secondary: #0a0a0a;
+    --bg-card: #111111;
+    --bg-overlay: rgba(0, 0, 0, 0.9);
+    
+    /* Colores de texto */
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --text-muted: #888888;
+    --text-accent: #dc2626;
+    
+    /* Colores de acento */
+    --accent-primary: #dc2626;
+    --accent-secondary: #991b1b;
+    --accent-hover: #ef4444;
+    
+    /* Colores de bordes */
+    --border-primary: #222222;
+    --border-secondary: #333333;
+    
+    /* Colores de estado */
+    --success: #16a34a;
+    --warning: #d97706;
+    --error: #dc2626;
+    
+    /* Tipografía */
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2rem;
+    --font-size-4xl: 2.5rem;
+    
+    /* Espaciado */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    
+    /* Bordes */
+    --border-radius: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-xl: 16px;
+    
+    /* Sombras */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    
+    /* Transiciones */
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    }
+
+    /* Reset y estilos globales */
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: var(--font-family);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+    }
+
+    /* Eliminar franjas blancas */
+    html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-primary);
+    }
+
+    #root {
+    background-color: var(--bg-primary);
+    min-height: 100vh;
+    }
+
+    /* Scrollbar personalizado */
+    ::-webkit-scrollbar {
+    width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+    }
+
+    ::-webkit-scrollbar-thumb {
+    background: var(--border-primary);
+    border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+    background: var(--border-secondary);
+}
+
+    /* Garantizar que todos los textos sean legibles */
+h1, h2, h3, h4, h5, h6, p, span, div, a, li, label {
+    color: var(--text-primary);
+}
+
+/* Excepciones para texto secundario */
+.text-muted, .text-secondary, small, .form-text {
+    color: var(--text-primary) !important;
+}
+
+/* Links */
+a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    transition: var(--transition-normal);
+}
+
+a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+.text-body, .card-text, .card-body p, .card-body span {
+    color: var(--text-primary) !important;
+}
+
+.card-body .text-body, .card-body .card-description, .card-body p {
+    color: var(--text-primary) !important;
+}
+
+/* Background común para todas las páginas */
+.background-container {
+    background: 
+        linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%),
+        url('/img/home/wall2.webp') center/cover no-repeat fixed;
+    min-height: 100vh;
+}
+
+/* Contenedores con transparencia */
+.transparent-container {
+    background: rgba(255, 255, 255, 0.007);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}

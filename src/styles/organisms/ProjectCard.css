@@ -1,0 +1,30 @@
+.project-card {
+    border: none;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-normal);
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.007);
+    border: 1px solid var(--border-primary);
+    width: 100%;
+    max-width: 380px;
+    margin: var(--spacing-xl) auto;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--accent-primary);
+}
+
+.card-buttons {
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-lg);
+}
+
+.card-buttons .btn {
+    flex: 1;
+}

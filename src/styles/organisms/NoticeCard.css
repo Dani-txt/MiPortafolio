@@ -1,0 +1,19 @@
+.notice-card {
+    border: none;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-normal);
+    margin-bottom: var(--spacing-xl);
+    background: var(--bg-card);
+    border: 1px solid var(--border-primary);
+}
+
+.notice-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--accent-primary);
+}
+
+.notice-card .card-body {
+    padding: var(--spacing-xl);
+}

@@ -1,0 +1,28 @@
+.noticias-section {
+    padding: var(--spacing-2xl) 0;
+    min-height: 100vh;
+    background: var(--bg-primary);
+}
+
+.noticias-section .section-title {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--text-primary);
+}
+
+.noticias-section .section-subtitle {
+    text-align: center;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.noticias-page {
+    padding: var(--spacing-2xl) 0;
+    min-height: 100vh;
+}
+
+.notices-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}

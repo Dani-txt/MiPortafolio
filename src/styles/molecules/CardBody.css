@@ -1,0 +1,16 @@
+.card-body-content {
+    padding: var(--spacing-lg) 0;
+}
+
+.card-title {
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+    text-align: center;
+}
+
+.card-description {
+    color: var(--text-primary) !important;
+    line-height: 1.6;
+    text-align: center;
+    font-size: var(--font-size-base);
+}

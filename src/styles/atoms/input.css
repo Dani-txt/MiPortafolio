@@ -1,0 +1,25 @@
+.form-control {
+    border-radius: var(--border-radius);
+    border: 2px solid var(--border-primary);
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-size-base);
+    transition: all var(--transition-normal);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    width: 100%;
+}
+
+.form-control:focus {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+    outline: none;
+}
+
+.form-control.textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-control::placeholder {
+    color: var(--text-muted);
+}

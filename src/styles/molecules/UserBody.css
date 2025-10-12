@@ -1,0 +1,106 @@
+.user-body {
+    padding: var(--spacing-lg);
+}
+
+.user-greeting {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+    text-align: center;
+}
+
+.user-name {
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+    text-align: center;
+    font-size: var(--font-size-4xl);
+}
+
+.user-title {
+    color: var(--accent-primary);
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+    font-size: var(--font-size-xl);
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background: rgba(27, 26, 26, 0.281);;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-primary);
+}
+
+.info-label {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.info-value {
+    color: var(--accent-primary);
+}
+
+.habilidades-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.habilidades-section h5 {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-primary);
+}
+
+.habilidades-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-lg);
+    justify-content: center;
+}
+
+.habilidad-tag {
+    background: var(--accent-primary);
+    color: var(--text-primary);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: 15px;
+    font-size: var(--font-size-sm);
+    border: 1px solid transparent;
+    transition: var(--transition-normal);
+}
+
+.habilidad-tag:hover {
+    background: var(--accent-hover);
+    transform: translateY(-1px);
+}
+
+.social-links {
+    display: flex;
+    gap: var(--spacing-lg);
+    justify-content: center;
+    margin-top: var(--spacing-xl);
+}
+
+.social-link {
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    transition: all var(--transition-normal);
+    padding: var(--spacing-sm);
+    border-radius: 50%;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.social-link:hover {
+    color: var(--accent-primary);
+    transform: translateY(-2px);
+    background: var(--bg-card);
+    text-decoration: none;
+    border-color: var(--accent-primary);
+}

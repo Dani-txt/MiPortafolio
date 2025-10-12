@@ -1,0 +1,18 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "Nuevo Proyecto Desarrollado",
+      "fecha": "2024-01-15",
+      "contenido": "He completado el desarrollo de una API REST con Spring Boot que incluye autenticación JWT y documentación con Swagger.",
+      "categoria": "Desarrollo"
+    },
+    {
+      "id": 2,
+      "titulo": "Certificación en React",
+      "fecha": "2024-01-10",
+      "contenido": "Obtuve una certificación en desarrollo frontend con React y Bootstrap, mejorando mis habilidades en interfaces modernas.",
+      "categoria": "Educación"
+    }
+  ]
+}
