@@ -1,6 +1,6 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import React from 'react';
-import '../../styles/organisms/Navbar.css';
+import '../../styles/organisms/navbar.css';
 
 function NavBar() {
   return (
