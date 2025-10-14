@@ -1,8 +1,6 @@
 import React from 'react';
 import Text from '../atoms/Text';
 import '../../styles/molecules/NoticeBody.css';
-import '../../styles/atoms/text.css';
-import '../../styles/global.css';
 
 function NoticeBody({ notice, className = '' }) {
     return (

@@ -4,8 +4,7 @@
     font-weight: 500;
     transition: all var(--transition-normal);
     border: 2px solid transparent;
-    background: var(--accent-primary);
-    color: var(--text-primary);
+    background: var(--accent-secondary);
     cursor: pointer;
     font-size: var(--font-size-base);
 }

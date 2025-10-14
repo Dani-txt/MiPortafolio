@@ -24,9 +24,22 @@ module.exports = function (config) {
          {
            test: /\.css$/,
            use: ['style-loader', 'css-loader'],
+
          },
+         {
+          test: /\.(webp|png|jpg|jpeg|gif|svg)$/i,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[path][name].[ext]',
+              },
+            },
+          ],
+        },
        ],
      },
+     
      resolve: {
        extensions: ['.js', '.jsx'],
      },

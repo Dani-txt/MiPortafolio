@@ -3,11 +3,18 @@
     border-radius: var(--border-radius-xl);
     box-shadow: var(--shadow-xl);
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.13);
+    background: var(--bg-card);
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
     border: 1px solid var(--border-primary);
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--accent-primary);
+    background: var(--bg-card);
 }
 
 .user-image-container {

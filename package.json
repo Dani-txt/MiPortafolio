@@ -46,5 +46,16 @@
     "karma-webpack": "^5.0.1",
     "style-loader": "^4.0.0",
     "vite": "^7.1.7"
+  },
+    "moduleNameMapper": {
+    "\\.(css|less|scss)$": "identity-obj-proxy",
+    "\\.(jpg|jpeg|png|gif|webp|svg)$": "<rootDir>/src/test/__mocks__/fileMock.js"
+  },
+  "jest": {
+    "moduleNameMapping": {
+      "\\.(jpg|jpeg|png|gif|webp|svg)$": "<rootDir>/src/test/__mocks__/fileMock.js"
+    }
   }
 }
+
+

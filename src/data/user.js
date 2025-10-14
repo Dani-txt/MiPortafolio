@@ -1,9 +1,7 @@
-import userImg from '../../public/img/user/user.webp';
-
 const user = {
     id: 1,
     name: "Daniel Nuñez Diaz",
-    foto: userImg,
+    foto: '/img/user/user.webp',
     edad: 26,
     titulo: [
         "Administrador financiero",

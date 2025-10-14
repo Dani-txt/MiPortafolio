@@ -5,7 +5,6 @@ import { BrowserRouter } from 'react-router-dom';
 describe('Home Page', () => {
     const mockNavigate = jasmine.createSpy('navigate');
 
-    // Mock simplificado del componente Home
     const MockHome = () => {
         const navigate = mockNavigate;
         

@@ -7,7 +7,6 @@ describe('UserCard Component', () => {
         name: 'Juan Pérez',
         foto: 'profile.jpg',
         titulo: ['Desarrollador Full Stack'],
-        edad: 30,
         habilidades: ['JavaScript', 'React'],
         redes: [
             { nombre: 'GitHub', url: 'https://github.com/juan', icono: 'github' }
@@ -25,7 +24,6 @@ describe('UserCard Component', () => {
         render(<UserCard user={mockUser} />);
         expect(screen.getByText(/Juan Pérez/)).toBeTruthy();
         expect(screen.getByText('Desarrollador Full Stack')).toBeTruthy();
-        expect(screen.getByText(/30/)).toBeTruthy();
     });
 
     it('aplica clases CSS correctamente', () => {

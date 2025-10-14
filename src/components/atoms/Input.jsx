@@ -1,21 +1,21 @@
 import React from "react";
-import '../../styles/atoms/Input.css';
+import '../../styles/atoms/input.css';
 
 function Input({ className = "", type = "text", ...props }) {
     if (type === "textarea") {
         return (
-            <textarea 
-                className={`form-control textarea ${className}`} 
-                {...props} 
+            <textarea
+                className={`form-control textarea ${className}`}
+                {...props}
             />
         );
     }
     
     return (
-        <input 
+        <input
             type={type}
-            className={`form-control ${className}`} 
-            {...props} 
+            className={`form-control ${className}`}
+            {...props}
         />
     );
 }

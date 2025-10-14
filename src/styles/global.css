@@ -1,14 +1,11 @@
     :root {
     --bg-primary: #000000;
     --bg-secondary: #0a0a0a;
-    --bg-card: #111111;
+    --bg-card: #201e1e7c;
     --bg-overlay: rgba(0, 0, 0, 0.9);
     
     /* Colores de texto */
     --text-primary: #ffffff;
-    --text-secondary: #cccccc;
-    --text-muted: #888888;
-    --text-accent: #dc2626;
     
     /* Colores de acento */
     --accent-primary: #dc2626;
